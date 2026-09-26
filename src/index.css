@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #e8f0ed;
+  color: #102f37;
+  font-family: "DM Sans", sans-serif;
+}
+
+::selection {
+  background: #b4ddd0;
+  color: #082e37;
+}
+
+.grain {
+  background-image: radial-gradient(#ffffff29 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.soft-shadow {
+  box-shadow: 0 18px 55px rgba(14, 62, 71, 0.09);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #e6b99e;
+  outline-offset: 4px;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.contacto {
+  background-color: #082e37;
+  color: #ffffff;
+}
+
+.contacto-boton {
+  background-color: #b4ddd0;
+  color: #082e37;
+}
+
+.contacto-boton:hover {
+  background-color: #ffffff;
+}
+
+.pie-pagina {
+  background-color: #06262e;
+  color: #ffffff;
+}
+
+.hero-card {
+  background: #082e37 !important;
+  color: #ffffff;
+}
+
+/* Oculta los colores claros que tapan el fondo */
+.hero-card > .absolute {
+  display: none;
+}
+
+/* Hace legible el pequeño recuadro sobre el corazón */
+.hero-card .backdrop-blur {
+  background: #145d61 !important;
+  color: #ffffff;
+}
+
+/* Mejora la lectura del texto superior e inferior */
+.hero-card .relative > span {
+  font-size: 0.875rem;
+}
+
+.hero-card p {
+  color: #ffffff;
+}
